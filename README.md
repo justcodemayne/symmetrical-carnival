@@ -16,6 +16,8 @@ Fast Estimator: Calculating the price of operations in USD.
 Tech Stack & Architecture
 Language and GUI: Python, Custom GUI / Menu bar wrapper.
 Architecture: The modular system with 11 modules implemented, optimized for background polling.
-Deployment: Native .app pre-compiled binary file and automation of deployment process
+Deployment: Native .app pre-compiled binary file and automation of deployment processes
+
+Check out macOs branch for downloads on mac
 
 
