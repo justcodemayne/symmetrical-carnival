@@ -1,0 +1,29 @@
+[project]
+name = "gaswatch"
+version = "1.0.0"
+description = "Live Ethereum base fee and priority fee tracker with a desktop GUI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "web3>=7.0,<9",
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+gaswatch = "gaswatch.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
